@@ -6,7 +6,7 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
     $locationProvider.hashPrefix('');
 
     $routeProvider.when('/', {
-        templateUrl: 'components/consent/consent.html',
+        templateUrl: '/client/components/consent/consent.html',
         controller : 'consentCtrl as consentCtrl'
     })
         .when('/demog', {
