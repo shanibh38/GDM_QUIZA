@@ -25,3 +25,25 @@ close DB from 'getUsersA' function
 open DB from 'insertUsersA' function
 Successed insertion user from 'insertUsersA' function
 close DB from 'insertUsersA' function
+Connecting to GDMA DB
+GDMA connection closed
+Connecting to GDMA DB
+GDMA connection closed
+Connecting to GDMA DB
+GDMA connection closed
+open DB from 'getUsersA' function
+Successed return users from 'getUsersA' function
+close DB from 'getUsersA' function
+open DB from 'insertUsersA' function
+Successed insertion user from 'insertUsersA' function
+close DB from 'insertUsersA' function
+open DB from 'getUsersA' function
+Successed return users from 'getUsersA' function
+close DB from 'getUsersA' function
+open DB from 'insertUsersA' function
+Successed insertion user from 'insertUsersA' function
+close DB from 'insertUsersA' function
+Connecting to GDMA DB
+GDMA connection closed
+Connecting to GDMA DB
+GDMA connection closed

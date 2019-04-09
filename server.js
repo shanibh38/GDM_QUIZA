@@ -11,10 +11,9 @@ app.use(cors());
 var Users = require('./server/Users');
 var jwt = require('jsonwebtoken');
 
-const PORT = process.env.PORT || 3000;
-var server = app.listen(PORT, function () {
+var server = app.listen(3000, '132.72.64.202', function () {
     var host = server.address().address;
-    console.log("Example app listening at https://%s:%s",host, PORT);
+    console.log("Example app listening at https://%s:%s",host, 3000);
     });
 
 app.use('/Users',Users);
