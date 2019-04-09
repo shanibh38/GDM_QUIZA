@@ -1,0 +1,3 @@
+Start logA!
+Connecting to GDMA DB
+GDMA connection closed
