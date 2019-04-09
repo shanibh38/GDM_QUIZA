@@ -12,9 +12,9 @@ var Users = require('./server/Users');
 var jwt = require('jsonwebtoken');
 
 const PORT =process.env.PORT | 3000;
-var server = app.listen(3000, function () {
+var server = app.listen(PORT, function () {
     var host = server.address().address;
-    console.log("Example app listening at https://%s:%s",host, 3000);
+    console.log("Example app listening at https://%s:%s",host, PORT);
     });
 
 app.use('/Users',Users);
