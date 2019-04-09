@@ -17,7 +17,7 @@ angular.module('citiesApp')
     $rootScope.isExpired3 = false;
     $rootScope.histQ3 = new Array();
 
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'https://132.72.64.202:3000/';
     skob.theExp();
 
     $scope.$on('$routeChangeSuccess ', function (event, next, current) {

@@ -16,7 +16,7 @@ angular.module('citiesApp')
     $rootScope.movesQuiz2 = 0;
     $rootScope.stopQuiz2 = false;
     $rootScope.histQ2 = new Array();
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'https://132.72.64.202:3000/';
     skob.theExp();
 
     self.checkFirstQ = function () {

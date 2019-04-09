@@ -1,7 +1,7 @@
 angular.module('citiesApp')
   .controller('demogController', ['$location', '$scope', '$http', '$rootScope', function ($location, $scope, $http, $rootScope) {
     self = this;
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'https://132.72.64.202:3000/';
     $rootScope.userName = "";
 
     function makeUserName(usernames) {
