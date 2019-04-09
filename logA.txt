@@ -47,3 +47,7 @@ Connecting to GDMA DB
 GDMA connection closed
 Connecting to GDMA DB
 GDMA connection closed
+Connecting to GDMA DB
+GDMA connection closed
+Connecting to GDMA DB
+GDMA connection closed
