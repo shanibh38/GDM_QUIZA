@@ -15,7 +15,7 @@ angular.module('citiesApp')
     $rootScope.firstBox23 = "Nan";
     $rootScope.stopBQ23 = false;
     $rootScope.histBQ23 = new Array();
-    var serverUrl = 'https://132.72.64.202:3000/';
+    var serverUrl = 'http://132.72.64.202:3000/';
 
     skob.theExp();
 

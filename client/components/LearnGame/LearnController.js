@@ -1,6 +1,6 @@
 angular.module('citiesApp')
     .controller('LearnController', ['$location', '$rootScope', '$scope', 'skob', '$http', function ($location, $rootScope, $scope, skob, $http) {
-        var serverUrl = 'https://132.72.64.202:3000/';
+        var serverUrl = 'http://132.72.64.202:3000/';
         self = this;
         $rootScope.foc = false;
         $rootScope.inLearn = true;
