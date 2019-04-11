@@ -15,7 +15,7 @@ angular.module('citiesApp')
     $rootScope.stopBQ12 = false;
     $rootScope.isExpiredBQ12 = false;
     $rootScope.histBQ12 = new Array();
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
 
     skob.theExp();
     self.focus1 = function () {

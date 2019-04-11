@@ -1,7 +1,7 @@
 angular.module('citiesApp')
   .controller('finalController', ['$location', '$rootScope', '$scope', '$http', function ($location, $rootScope, $scope,$http) {
     self = this;
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
 
     function saveDetails() {
       data = {

@@ -127,10 +127,8 @@ function insertUsersA(userName, age, gender, education) {
     con.query(sql, [userName, age, gender, education], function (err, result) {
       if (err) {
         fs.appendFileSync('./logA.txt', "Error close DB from 'insertUsersA' function - " + err.message + "\n");
-        console.log("fail");
       }
       else {
-        console.log("suc");
         fs.appendFileSync('./logA.txt', "Successed insertion user from 'insertUsersA' function\n");
       }
     });
@@ -139,5 +137,37 @@ function insertUsersA(userName, age, gender, education) {
 }
 
 
+function insertQuiz1A(userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+  forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
+  firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
+  secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
+  resetNum, firstBoxToMove, endTime, totalMoves, histMoves) {
+    con.connect(function (err) {
+      if (err) {
+        fs.appendFileSync('./logA.txt', "Error Connecting to GDMA DB - " + err.message + "\n");
+      }
+      else {
+        fs.appendFileSync('./logA.txt', "Connecting to GDMA DB\n");
+      }
+      let sql = `INSERT INTO Quiz1A (userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+        forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
+        firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
+        secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
+        resetNum, firstBoxToMove, endTime, totalMoves, histMoves)
+                VALUES  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`;
+      con.query(sql, [userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+        forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
+        firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
+        secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
+        resetNum, firstBoxToMove, endTime, totalMoves, histMoves], function (err, result) {
+        if (err) {
+          fs.appendFileSync('./logA.txt', "Error insertion Quiz1A details from 'insertQuiz1A' function - " + err.message + "\n");
+        }
+        else {
+          fs.appendFileSync('./logA.txt', "Successed insertion user from 'insertUsersA' function\n");
+        }
+      });
+    });
+  }
 
-module.exports = { createA, getUsersA,insertUsersA };
+module.exports = { createA, getUsersA,insertUsersA,insertQuiz1A };
