@@ -25,21 +25,21 @@ var con = mysql.createConnection({
     console.log("Connected!");
   });
   */
+/*
+ con.connect(function(err) {
+   if (err) throw err;
+   console.log("Connected!");
+   var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
+   con.query(sql, function (err, result) {
+     if (err) throw err;
+     console.log("Table created");
+   });
+ });
  /*
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
-    con.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log("Table created");
-    });
-  });
-  /*
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-  });
+ con.connect(function(err) {
+   if (err) throw err;
+   console.log("Connected!");
+ });
 */
 /*
 var mysql = require('mysql');
@@ -69,11 +69,12 @@ var con = mysql.createConnection({
     });
 */
 
-const PORT =process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 var server = app.listen(PORT, function () {
-    var host = server.address().address;
-    console.log("Example app listening at https://%s:%s",host, PORT);
-    });
+  var host = server.address().address;
+  console.log("Example app listening at https://%s:%s", host, PORT);
+});
 
-app.use('/Users',Users);
 app.use(express.static(__dirname + '/client'));
+
+app.use('/Users', Users);
