@@ -25,7 +25,7 @@ function createA() {
         console.log("Table UsersA created\n");
       }
     });
-    con.query(`CREATE TABLE IF NOT EXISTS Quiz1A (userName varchar(10) PRIMARY KEY,minMoves integer, firstBox varchar(10), secBox varchar(10),
+    con.query(`CREATE TABLE IF NOT EXISTS Quiz1A (userName varchar(10) PRIMARY KEY,minMoves integer, firstBox varchar(10), secBox varchar(10),hardme integer,hardthem integer,
       firstMovesRate integer, secondMovesRate integer, thirdMovesRate integer,forthMovesRate integer,fifthMovesRate integer,
       firstBox1Rate integer, firstBox2Rate integer, firstBox3Rate integer, firstBox4Rate integer,firstBox5Rate integer,firstBox6Rate integer,
       secondBox1Rate integer, secondBox2Rate integer, secondBox3Rate integer, secondBox4Rate integer,secondBox5Rate integer,secondBox6Rate integer,
@@ -136,7 +136,7 @@ function insertUsersA(userName, age, gender, education) {
 }
 
 
-function insertQuiz1A(userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+function insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, firstMovesRate, secondMovesRate, thirdMovesRate,
   forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
   firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
   secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
@@ -148,13 +148,13 @@ function insertQuiz1A(userName, minMoves, firstBox, secBox, firstMovesRate, seco
       else {
         console.log("Connecting to GDMA DB\n");
       }
-      let sql = `INSERT INTO Quiz1A (userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+      let sql = `INSERT INTO Quiz1A (userName, minMoves, firstBox, secBox, hardme, hardthem, firstMovesRate, secondMovesRate, thirdMovesRate,
         forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
         firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
         secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
         resetNum, firstBoxToMove, endTime, totalMoves, histMoves)
                 VALUES  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`;
-      con.query(sql, [userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+      con.query(sql, [userName, minMoves, firstBox, secBox, hardme, hardthem, firstMovesRate, secondMovesRate, thirdMovesRate,
         forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
         firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
         secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,

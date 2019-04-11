@@ -66,6 +66,8 @@ angular.module('citiesApp')
         "minMoves": $scope.moves,
         "firstBox": $scope.uqf,
         "secBox": $scope.uqs,
+        "hardme": $scope.hardme,
+        "hardthem": $scope.hardthem,
         "firstMovesRate": $scope.firstR,
         "secondMovesRate": $scope.secR,
         "thirdMovesRate": $scope.thirdR,

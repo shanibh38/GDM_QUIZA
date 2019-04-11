@@ -39,6 +39,8 @@ router.post('/addQuiz1A', function (req, res) {
     var minMoves = req.body.minMoves;
     var firstBox = req.body.firstBox;
     var secBox = req.body.secBox;
+    var hardme = req.body.hardme;
+    var hardthem = req.body.hardthem;
     var firstMovesRate = req.body.firstMovesRate;
     var secondMovesRate = req.body.secondMovesRate;
     var thirdMovesRate = req.body.thirdMovesRate;
@@ -62,7 +64,7 @@ router.post('/addQuiz1A', function (req, res) {
     var totalMoves = req.body.totalMoves;
     var histMoves = req.body.histMoves;
 
-    DBManger.insertQuiz1A(userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
+    DBManger.insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, firstMovesRate, secondMovesRate, thirdMovesRate,
         forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
         firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
         secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,

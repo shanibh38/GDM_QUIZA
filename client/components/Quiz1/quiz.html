@@ -54,14 +54,45 @@
                 <option value="6">Box number 6</option>
             </select>
         </p>
+        <p>4) 
+            <select name="hardme" id="hardme" ng-model="hardme" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </p>
+    <br>
+    <p>5)
+            <select name="hardthem" id="hardthem" ng-model="hardthem" required>
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </p>
+    <br>
     </form>
     <span ng-hide="!quizCtrl.contToTOM">
         <button ng-click="quizCtrl.checkFirstQuiz()" ng-disabled='!(!(!(stopQuiz||isExpired)||quiz1Form.$invalid))'>Continue</button>
     </span>
     <div ng-hide="quizCtrl.contToTOM">
         <p>Out of the people trying to solve question 1, how many, do you estimate, will select each of the 5 options below
-            [including, of course, the one you chose]?
-            <br> Try and guess which percentage of the people who answered question 1 picked the correct answer? </p>
+            [including, of course, the one you chose]?</p>
         0-39 moves :
         <input name="firstR" type="number" min="0" ng-model="firstR" required/>
         <br> 40-79 moves:
@@ -74,8 +105,7 @@
         <input name="fiveR" type="number" min="0" ng-model="fiveR" required/>
         <br>
         <p>Out of the people trying to solve question 2, how many, do you estimate, will select each of the 6 options below
-            [including, of course, the one you chose]?
-            <br>Try and guess which percentage of the people who answered question 2 picked the correct answer?</p>
+            [including, of course, the one you chose]?</p>
         First box is number 1 :
         <input name="firstB1" type="number" min="0" ng-model="firstB1" required/>
         <br> First box is number 2 :
@@ -91,8 +121,7 @@
         <br>
 
         <p>Out of the people trying to solve question 3, how many, do you estimate, will select each of the 6 options below
-            [including, of course, the one you chose]?
-            <br>Try and guess which percentage of the people who answered question 3 picked the correct answer?</p>
+            [including, of course, the one you chose]? </p>
         Second box is number 1 :
         <input name="secondB1" type="number" min="0" ng-model="secondB1" required/>
         <br> Second box is number 2 :
