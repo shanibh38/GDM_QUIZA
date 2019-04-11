@@ -6,22 +6,6 @@ var DBManger = require("../DBmysql");
 const fs = require('fs');
 
 
-try {
-    if (fs.existsSync("./logA.txt")) {
-        console.log("file logA.txt exists");
-    }
-    else {
-        fs.writeFile("./logA.txt", "Start logA!\n", function (err) {
-            if (err) {
-                return console.log(err);
-            }
-            console.log("The file logA.txt was saved!");
-        });
-    }
-} catch (err) {
-    console.error(err)
-}
-
 DBManger.createA();
 //get users A
 router.get('/getAllUsersA', function (req, res) {
