@@ -1447,15 +1447,15 @@ angular.module('citiesApp')
                 if ($rootScope.inLearn)
                     sokoban.curLevel = 1;
                 else if ($rootScope.inQuiz)
-                    sokoban.curLevel = 12;
-                else if ($rootScope.inQuiz2)
                     sokoban.curLevel = 13;
-                else if ($rootScope.inQuiz3)
+                else if ($rootScope.inQuiz2)
                     sokoban.curLevel = 14;
+                else if ($rootScope.inQuiz3)
+                    sokoban.curLevel = 12;
                 else if ($rootScope.inBQ12)
-                    sokoban.curLevel = 6;
-                else if ($rootScope.inBQ23)
                     sokoban.curLevel = 11;
+                else if ($rootScope.inBQ23)
+                    sokoban.curLevel = 6;
 
                 sokoban._isLevelChanged = true;
                 sokoban.loadLevels();
