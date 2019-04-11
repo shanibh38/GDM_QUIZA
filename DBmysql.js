@@ -127,8 +127,10 @@ function insertUsersA(userName, age, gender, education) {
     con.query(sql, [userName, age, gender, education], function (err, result) {
       if (err) {
         fs.appendFileSync('./logA.txt', "Error close DB from 'insertUsersA' function - " + err.message + "\n");
+        console.log("fail");
       }
       else {
+        console.log("suc");
         fs.appendFileSync('./logA.txt', "Successed insertion user from 'insertUsersA' function\n");
       }
     });

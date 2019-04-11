@@ -52,7 +52,9 @@ angular.module('citiesApp')
 
       $http.post(serverUrl + "Users/addDemogA", data)
         .then(function (response) {
+          console.log("succc");
         }, function (response) {
+          console.log("faaaaaa");
         });
 
     }
