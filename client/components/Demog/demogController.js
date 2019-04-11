@@ -1,7 +1,7 @@
 angular.module('citiesApp')
   .controller('demogController', ['$location', '$scope', '$http', '$rootScope', function ($location, $scope, $http, $rootScope) {
     self = this;
-    var serverUrl = 'http://132.72.237.95:3000/';
+    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
     $rootScope.userName = "";
 
     function makeUserName(usernames) {
