@@ -2,7 +2,6 @@ const sqlite3 = require('sqlite3').verbose();
 const fs = require('fs');
 
 function createA() {
-
     let db = new sqlite3.Database('./GDMA.db', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
         if (err) {
             fs.appendFileSync('./logA.txt', "Error Connecting to GDMA DB - " + err.message + "\n");

@@ -1,7 +1,7 @@
 
 angular.module('citiesApp')
   .controller('quizController', [ '$location', '$rootScope', '$scope', 'skob', '$http', function ($location, $rootScope, $scope, skob, $http) {
-    var serverUrl = 'http://132.72.64.202:3000/';
+    var serverUrl = 'http://132.72.237.95:3000/';
     self = this;
     self.contToTOM = true;
     $rootScope.inQuiz = true;

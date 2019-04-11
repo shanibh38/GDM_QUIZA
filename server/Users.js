@@ -2,25 +2,25 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
-var DBManger = require("../DBManager");
+var DBManger = require("../DBmysql");
 const fs = require('fs');
 
 
 try {
     if (fs.existsSync("./logA.txt")) {
-      console.log("file logA.txt exists");
+        console.log("file logA.txt exists");
     }
     else {
-        fs.writeFile("./logA.txt", "Start logA!\n", function(err) {
-            if(err) {
+        fs.writeFile("./logA.txt", "Start logA!\n", function (err) {
+            if (err) {
                 return console.log(err);
             }
             console.log("The file logA.txt was saved!");
-        }); 
+        });
     }
-  } catch(err) {
+} catch (err) {
     console.error(err)
-  }
+}
 
 DBManger.createA();
 //get users A
@@ -118,8 +118,8 @@ router.post('/addQuiz2A', function (req, res) {
 
     DBManger.insertQuiz2A(userName, minMoves, firstBox, secBox, firstMovesRate, secondMovesRate, thirdMovesRate,
         forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
-        firstBox5Rate, firstBox6Rate,  secondBox1Rate, secondBox2Rate,
-        secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate, 
+        firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
+        secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
         resetNum, firstBoxToMove, endTime, totalMoves, histMoves);
     res.sendStatus(200);
 });
