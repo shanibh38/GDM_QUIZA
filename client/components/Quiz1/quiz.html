@@ -54,7 +54,7 @@
                 <option value="6">Box number 6</option>
             </select>
         </p>
-        <p>4) 
+        <p>4) How difficult was it for you to solve this problem?
             <select name="hardme" id="hardme" ng-model="hardme" required>
                 <option value=""></option>
                 <option value="1">1</option>
@@ -69,8 +69,7 @@
                 <option value="10">10</option>
             </select>
         </p>
-    <br>
-    <p>5)
+    <p>5) In your opinion, how difficult it will be for other people to solve this problem?
             <select name="hardthem" id="hardthem" ng-model="hardthem" required>
                 <option value=""></option>
                 <option value="1">1</option>
@@ -85,7 +84,6 @@
                 <option value="10">10</option>
             </select>
         </p>
-    <br>
     </form>
     <span ng-hide="!quizCtrl.contToTOM">
         <button ng-click="quizCtrl.checkFirstQuiz()" ng-disabled='!(!(!(stopQuiz||isExpired)||quiz1Form.$invalid))'>Continue</button>

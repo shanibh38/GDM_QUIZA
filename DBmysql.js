@@ -153,7 +153,7 @@ function insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, fi
         firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
         secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
         resetNum, firstBoxToMove, endTime, totalMoves, histMoves)
-                VALUES  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`;
+                VALUES  (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`;
       con.query(sql, [userName, minMoves, firstBox, secBox, hardme, hardthem, firstMovesRate, secondMovesRate, thirdMovesRate,
         forthMovesRate, fifthMovesRate, firstBox1Rate, firstBox2Rate, firstBox3Rate, firstBox4Rate,
         firstBox5Rate, firstBox6Rate, secondBox1Rate, secondBox2Rate,
