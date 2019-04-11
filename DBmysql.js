@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "quizagdm.coxqxrjsrdck.us-east-1.rds.amazonaws.com",
+  host: "quizbgdmb.coxqxrjsrdck.us-east-1.rds.amazonaws.com",
   port: "3306",
   user: "admin",
-  password: "admingdma",
-  database: "gdma"
+  password: "admingdmb",
+  database: "gdmb"
 });
 
 function createA() {
@@ -225,10 +225,10 @@ function insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, fi
             secondBox3Rate, secondBox4Rate, secondBox5Rate, secondBox6Rate,
             resetNum, firstBoxToMove, endTime, totalMoves, histMoves], function (err, result) {
             if (err) {
-              console.log("Error insertion Quiz3A details from 'insertQuiz1A' function - " + err.message + "\n");
+              console.log("Error insertion Quiz3A details from 'insertQuiz3A' function - " + err.message + "\n");
             }
             else {
-              console.log("Successed insertion Quiz3A details from 'insertQuiz1A' function\n");
+              console.log("Successed insertion Quiz3A details from 'insertQuiz3A' function\n");
             }
           });
         });
@@ -270,10 +270,10 @@ function insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, fi
           VALUES  (?,?,?,?,?,?,?,?,?)`;
           con.query(sql, [userName, minMoves, firstBox, secBox, resetNum, firstBoxToMove, endTime, totalMoves, histMoves], function (err, result) {
             if (err) {
-              console.log("Error insertion BQ23A details from 'insertBQ12A' function - " + err.message + "\n");
+              console.log("Error insertion BQ23A details from 'insertBQ23A' function - " + err.message + "\n");
             }
             else {
-              console.log("Successed insertion BQ23A details from 'insertBQ12A' function\n");
+              console.log("Successed insertion BQ23A details from 'insertBQ23A' function\n");
             }
           });
         });
@@ -300,6 +300,7 @@ function insertQuiz1A(userName, minMoves, firstBox, secBox, hardme, hardthem, fi
             }
           });
         });
+        con.end();
       
       }
 
