@@ -17,7 +17,7 @@ angular.module('citiesApp')
     $rootScope.isExpired3 = false;
     $rootScope.histQ3 = new Array();
 
-    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
+    var serverUrl = 'http://calm-everglades-32154.herokuapp.com/';
     skob.theExp();
 
     $scope.$on('$routeChangeSuccess ', function (event, next, current) {

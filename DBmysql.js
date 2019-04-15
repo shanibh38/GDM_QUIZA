@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "quizbgdmb.coxqxrjsrdck.us-east-1.rds.amazonaws.com",
+  host: "quizagdm.coxqxrjsrdck.us-east-1.rds.amazonaws.com",
   port: "3306",
   user: "admin",
-  password: "admingdmb",
-  database: "gdmb"
+  password: "admingdma",
+  database: "gdma"
 });
 
 function createA() {

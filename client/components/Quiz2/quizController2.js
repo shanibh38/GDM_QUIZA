@@ -16,7 +16,7 @@ angular.module('citiesApp')
     $rootScope.movesQuiz2 = 0;
     $rootScope.stopQuiz2 = false;
     $rootScope.histQ2 = new Array();
-    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
+    var serverUrl = 'http://calm-everglades-32154.herokuapp.com/';
     skob.theExp();
 
     self.checkFirstQ = function () {

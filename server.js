@@ -13,7 +13,7 @@ var jwt = require('jsonwebtoken');
 const PORT = process.env.PORT || 3000;
 var server = app.listen(PORT, function () {
   var host = server.address().address;
-  console.log("Example app listening at https://%s:%s", host, PORT);
+  console.log("Example app listening at http://%s:%s", host, PORT);
 });
 
 app.use(express.static(__dirname + '/client'));
