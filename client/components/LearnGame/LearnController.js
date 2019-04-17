@@ -1,6 +1,6 @@
 angular.module('citiesApp')
     .controller('LearnController', ['$location', '$rootScope', '$scope', 'skob', '$http', function ($location, $rootScope, $scope, skob, $http) {
-        var serverUrl = 'http://calm-everglades-32154.herokuapp.com/';
+        var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
         self = this;
         $rootScope.foc = false;
         $rootScope.inLearn = true;

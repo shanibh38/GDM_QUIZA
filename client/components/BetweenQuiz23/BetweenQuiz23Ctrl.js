@@ -15,7 +15,7 @@ angular.module('citiesApp')
     $rootScope.firstBox23 = "Nan";
     $rootScope.stopBQ23 = false;
     $rootScope.histBQ23 = new Array();
-    var serverUrl = 'http://calm-everglades-32154.herokuapp.com/';
+    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
 
     skob.theExp();
 

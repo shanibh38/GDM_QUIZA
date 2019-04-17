@@ -1,7 +1,7 @@
 
 angular.module('citiesApp')
   .controller('quizController', [ '$location', '$rootScope', '$scope', 'skob', '$http', function ($location, $rootScope, $scope, skob, $http) {
-    var serverUrl = 'http://calm-everglades-32154.herokuapp.com/';
+    var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
     self = this;
     self.contToTOM = true;
     $rootScope.inQuiz = true;
