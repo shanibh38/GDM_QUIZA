@@ -43,7 +43,7 @@ angular.module('citiesApp')
       return (n < 10 ? "0" : "") + n;
     }
     var curDate = new Date().getTime();
-    var curPlusDate = new Date(curDate + 10 * 60000).getTime();
+    var curPlusDate = new Date(curDate + 15 * 60000).getTime();
     var x = setInterval(function () {
       if (!$rootScope.stopQuiz3) {
         var now = new Date().getTime();
@@ -62,7 +62,7 @@ angular.module('citiesApp')
 
     function saveDetails() {
       if ($scope.moves < 100 || $scope.moves > 116)
-      $rootScope.isBonus = false;
+        $rootScope.isBonus = false;
 
       data = {
         "userName": $rootScope.userName,
@@ -272,6 +272,22 @@ angular.module('citiesApp')
         return false;
     }
 
+    function completerButUnder100() {
+      if (
+        (($scope.secondB1 != undefined && $scope.secondB2 != undefined && $scope.secondB3 != undefined && $scope.secondB4 != undefined && $scope.secondB5 != undefined && $scope.secondB6 != undefined) &&
+          ($scope.secondB1 + $scope.secondB2 + $scope.secondB3 + $scope.secondB4 + $scope.secondB5 + $scope.secondB6 != 100)) ||
+        (($scope.firstB1 != undefined && $scope.firstB2 != undefined && $scope.firstB3 != undefined && $scope.firstB4 != undefined && $scope.firstB5 != undefined && $scope.firstB6 != undefined) &&
+          ($scope.firstB1 + $scope.firstB2 + $scope.firstB3 + $scope.firstB4 + $scope.firstB5 + $scope.firstB6 != 100))
+        ||
+        (($scope.firstR != undefined && $scope.secR != undefined && $scope.thirdR != undefined && $scope.forthR != undefined && $scope.fiveR != undefined) &&
+          ($scope.firstR + $scope.secR + $scope.thirdR + $scope.forthR + $scope.fiveR != 100)
+        ))
+        return true;
+      else
+        return false;
+    }
+
+
     self.moveDmg = function () {
       if (checkDetails()) {
         if (checkAgainFirst()) {
@@ -286,28 +302,33 @@ angular.module('citiesApp')
         }
       }
       else {
-        if (confirm(`The sum of one (or more) of the filed's precentage is not equal to 100,
+        if (completerButUnder100()) {
+          alert("The sum of one (or more) of the filed's precentage is not equal to 100, please check it or clear the fields you had like to fill automatically by the system.");
+        }
+        else {
+          if (confirm(`The sum of one (or more) of the filed's precentage is not equal to 100,
         Those fields will filled automatically by the rest of the precentages left, equaly.
         Are you sure you want to continue? `)) {
-          var checkMoves = completeTo100Moves();
-          var checkFirst = completeTo100First();
-          var checkSec = completeTo100Sec();
+            var checkMoves = completeTo100Moves();
+            var checkFirst = completeTo100First();
+            var checkSec = completeTo100Sec();
 
-          if (checkMoves && checkFirst && checkSec) {
-            if (checkAgainFirst()) {
-              saveDetails();
-              $rootScope.isExpired3 = false;
-              $rootScope.stopQuiz3 = true;
-              $location.path('/final');
-              $location.replace();
+            if (checkMoves && checkFirst && checkSec) {
+              if (checkAgainFirst()) {
+                saveDetails();
+                $rootScope.isExpired3 = false;
+                $rootScope.stopQuiz3 = true;
+                $location.path('/final');
+                $location.replace();
+              }
+              else {
+                alert("Please fill properly the first section of questions");
+              }
+
             }
             else {
-              alert("Please fill properly the first section of questions");
+              alert("Process failed - The sum of one (or more) of the field's precentage is above 100");
             }
-
-          }
-          else {
-            alert("Process failed - The sum of one (or more) of the field's precentage is above 100");
           }
         }
       }
