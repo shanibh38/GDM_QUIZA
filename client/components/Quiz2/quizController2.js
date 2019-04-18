@@ -285,12 +285,12 @@ angular.module('citiesApp')
     function completerButUnder100() {
       if (
         (($scope.secondB1 != undefined && $scope.secondB2 != undefined && $scope.secondB3 != undefined && $scope.secondB4 != undefined && $scope.secondB5 != undefined && $scope.secondB6 != undefined) &&
-          ($scope.secondB1 + $scope.secondB2 + $scope.secondB3 + $scope.secondB4 + $scope.secondB5 + $scope.secondB6 != 100)) ||
+          (Math.floor($scope.secondB1 + $scope.secondB2 + $scope.secondB3 + $scope.secondB4 + $scope.secondB5 + $scope.secondB6100)<100)) ||
         (($scope.firstB1 != undefined && $scope.firstB2 != undefined && $scope.firstB3 != undefined && $scope.firstB4 != undefined && $scope.firstB5 != undefined && $scope.firstB6 != undefined) &&
-          ($scope.firstB1 + $scope.firstB2 + $scope.firstB3 + $scope.firstB4 + $scope.firstB5 + $scope.firstB6 != 100))
+          (Math.floor($scope.firstB1 + $scope.firstB2 + $scope.firstB3 + $scope.firstB4 + $scope.firstB5 + $scope.firstB6)<100))
         ||
         (($scope.firstR != undefined && $scope.secR != undefined && $scope.thirdR != undefined && $scope.forthR != undefined && $scope.fiveR != undefined) &&
-          ($scope.firstR + $scope.secR + $scope.thirdR + $scope.forthR + $scope.fiveR != 100)
+          (Math.floor($scope.firstR + $scope.secR + $scope.thirdR + $scope.forthR + $scope.fiveR)<100)
         ))
         return true;
       else
