@@ -255,35 +255,35 @@ angular.module('citiesApp')
                                 ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
                             ],
                             [
-                                ["G","G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
-                                ["G","G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G", "G"],
-                                ["G", "G", "D","-", "-", "-", "*", "$1", "-", "D", "D", "G", "G"],
-                                ["G", "D", "D","-", "-", "-", "*", "D", "-", "D", "D", "D", "G"],
-                                ["G", "D","D","-", "-", "-", "D", "@", "-", "D", "D", "D", "G"],
-                                ["G", "G", "D", "-", "-", "-", "-", "B4", "D", "D", "D","G", "G"],
-                                ["G", "D", "D", "-", "-", "B3", "B2", "-", "-", "*", "D","G", "G"],
-                                ["G", "D", "D", "D", "B6", "*", "-", "D", "D", "B5", "D","D", "G"],
-                                ["G", "G","D", "D", "-", "-", "-", "D", "D", "*", "D", "D","G"],
-                                ["G", "G","G", "D", "D", "D", "D", "D", "D", "D", "D","G", "G"],
-                                ["G","G", "G", "G", "G", "G", "G", "G", "G", "G", "G","G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G", "G"],
+                                ["G", "G", "D", "-", "-", "-", "*", "$1", "-", "D", "D", "G", "G"],
+                                ["G", "D", "D", "-", "-", "-", "*", "D", "-", "D", "D", "D", "G"],
+                                ["G", "D", "D", "-", "-", "-", "D", "@", "-", "D", "D", "D", "G"],
+                                ["G", "G", "D", "-", "-", "-", "-", "B4", "D", "D", "D", "G", "G"],
+                                ["G", "D", "D", "-", "-", "B3", "B2", "-", "-", "*", "D", "G", "G"],
+                                ["G", "D", "D", "D", "B6", "*", "-", "D", "D", "B5", "D", "D", "G"],
+                                ["G", "G", "D", "D", "-", "-", "-", "D", "D", "*", "D", "D", "G"],
+                                ["G", "G", "G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
                             ],
                             [
-                                ["G","G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
-                                ["G","G", "G", "G", "G", "G", "G", "D", "D", "D", "G", "G", "G", "G"],
-                                ["G","G", "G", "G", "G", "G", "D", "D", "G", "G", "G", "G", "G", "G"],
-                                ["G","G","G",  "G", "G", "D", "G", "G", "G", "G", "G", "G", "G", "G"],
-                                ["G", "G", "D","D", "D", "D", "D", "D", "D", "D", "G", "G","G", "G"],
-                                ["G", "D","D", "*", "D", "D", "-", "-", "-", "D", "G", "G", "G", "G"],
-                                ["G", "D", "D", "B6","D", "D", "-", "*", "B1", "D", "D", "G", "G", "G"],
-                                ["G", "D", "D", "*","-", "-", "B4", "B2", "-", "-", "D", "D", "D", "G"],
-                                ["G", "G", "D", "D","D", "B5", "-", "-", "-", "-", "D", "D", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "D", "D", "D", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "D", "D", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "D", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G", "G", "G"],
+                                ["G", "D", "D", "*", "D", "D", "-", "-", "-", "D", "G", "G", "G", "G"],
+                                ["G", "D", "D", "B6", "D", "D", "-", "*", "B1", "D", "D", "G", "G", "G"],
+                                ["G", "D", "D", "*", "-", "-", "B4", "B2", "-", "-", "D", "D", "D", "G"],
+                                ["G", "G", "D", "D", "D", "B5", "-", "-", "-", "-", "D", "D", "G", "G"],
                                 ["G", "G", "G", "D", "-", "@", "D", "-", "-", "-", "D", "G", "G", "G"],
-                                ["G", "G", "G", "D", "-", "D", "*", "-", "-", "-", "D", "G","G", "G"],
-                                ["G","G", "G", "D", "-", "$3", "*", "-", "-", "-", "D", "G","G", "G"],
-                                ["G","G", "G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G", "G"],
-                                ["G","G", "G", "G", "G", "D", "G", "G", "D", "G", "G", "G", "G", "G"],
-                                ["G","G", "G", "G", "G", "D", "D", "G", "D", "D", "G", "G", "G", "G"],
-                                ["G","G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "G", "D", "-", "D", "*", "-", "-", "-", "D", "G", "G", "G"],
+                                ["G", "G", "G", "D", "-", "$3", "*", "-", "-", "-", "D", "G", "G", "G"],
+                                ["G", "G", "G", "D", "D", "D", "D", "D", "D", "D", "D", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "D", "G", "G", "D", "G", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "D", "D", "G", "D", "D", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
                             ],
                         ];
 
@@ -511,7 +511,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y - 2][curPosition.x] === "*" &&
                                 !isPushed
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y-1][curPosition.x]);
+                                this.checkTheFirst(sokoban.level[curPosition.y - 1][curPosition.x]);
                                 var boxNumber = sokoban.level[curPosition.y - 1][curPosition.x];
                                 sokoban.level[curPosition.y - 1][curPosition.x] = "-";
                                 sokoban.level[curPosition.y - 2][curPosition.x] = "$" + boxNumber.substring(1);
@@ -524,7 +524,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y - 2][curPosition.x] === "-"
 
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y-1][curPosition.x]);
+                                this.checkTheFirst(sokoban.level[curPosition.y - 1][curPosition.x]);
                                 var boxNumber = sokoban.level[curPosition.y - 1][curPosition.x];
                                 sokoban.level[curPosition.y - 1][curPosition.x] = "-";
                                 sokoban.level[curPosition.y - 2][curPosition.x] = boxNumber;
@@ -538,7 +538,7 @@ angular.module('citiesApp')
                             curPosition.y - 1 > 0 &&
                             sokoban.level[curPosition.y - 2][curPosition.x].includes("$")
                         ) {
-                            this.checkTheFirst(sokoban.level[curPosition.y-1][curPosition.x]);
+                            this.checkTheFirst(sokoban.level[curPosition.y - 1][curPosition.x]);
                         }
                         else { // no obsticles on top
                             // move player to spot
@@ -600,7 +600,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y + 2][curPosition.x] === "-"
 
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y+1][curPosition.x]);
+                                this.checkTheFirst(sokoban.level[curPosition.y + 1][curPosition.x]);
                                 var boxNumber = sokoban.level[curPosition.y + 1][curPosition.x];
                                 sokoban.level[curPosition.y + 1][curPosition.x] = "-";
                                 sokoban.level[curPosition.y + 2][curPosition.x] = boxNumber;
@@ -616,7 +616,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y + 2][curPosition.x] === "*" &&
                                 !isPushed
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y+1][curPosition.x]);
+                                this.checkTheFirst(sokoban.level[curPosition.y + 1][curPosition.x]);
                                 var boxNumber = sokoban.level[curPosition.y + 1][curPosition.x];
                                 sokoban.level[curPosition.y + 1][curPosition.x] = "-";
                                 sokoban.level[curPosition.y + 2][curPosition.x] = "$" + boxNumber.substring(1);
@@ -684,7 +684,7 @@ angular.module('citiesApp')
                                 curPosition.x + 1 > 0 &&
                                 sokoban.level[curPosition.y][curPosition.x + 2] === "-"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x + 1]);
                                 var boxNumber = sokoban.level[curPosition.y][curPosition.x + 1];
                                 sokoban.level[curPosition.y][curPosition.x + 1] = "-";
                                 sokoban.level[curPosition.y][curPosition.x + 2] = boxNumber;
@@ -700,7 +700,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y][curPosition.x + 2] === "*" &&
                                 !isPushed
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x + 1]);
                                 var boxNumber = sokoban.level[curPosition.y][curPosition.x + 1];
                                 sokoban.level[curPosition.y][curPosition.x + 1] = "-";
                                 sokoban.level[curPosition.y][curPosition.x + 2] = "$" + boxNumber.substring(1);
@@ -768,7 +768,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y][curPosition.x - 2] === "-" &&
                                 sokoban.level[curPosition.y][curPosition.x - 2] !== "*"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x - 1]);
                                 var boxNumber = sokoban.level[curPosition.y][curPosition.x - 1];
                                 sokoban.level[curPosition.y][curPosition.x - 1] = "-";
                                 sokoban.level[curPosition.y][curPosition.x - 2] = boxNumber;
@@ -783,7 +783,7 @@ angular.module('citiesApp')
                                 sokoban.level[curPosition.y][curPosition.x - 2] === "*" &&
                                 !isPushed
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x - 1]);
                                 var boxNumber = sokoban.level[curPosition.y][curPosition.x - 1];
                                 sokoban.level[curPosition.y][curPosition.x - 1] = "-";
                                 sokoban.level[curPosition.y][curPosition.x - 2] = "$" + boxNumber.substring(1);
@@ -1341,9 +1341,23 @@ angular.module('citiesApp')
                     sokoban.isInitialized = true;
                 },
 
+                areEq: function (curLev, prevLev) {
+                    for (let i = 0; i < curLev.length; i++) {
+                        for (let j = 0; j < curLev[i].length; j++) {
+                            if (curLev[i][j] != prevLev[i][j])
+                                return false;
+                        }
+                    }
+                    return true;
+                },
+
                 keyDown: function (e) {
-                    prevLev = JSON.parse(JSON.stringify(sokoban.level));
-                    prevLev[sokoban.getPlayerPosition().y][sokoban.getPlayerPosition().x] = "@";
+                //    if (prevLev != undefined && prevLev.length > 0) {
+                //        if (sokoban.areEq(sokoban.level, prevLev) == false) {
+                            prevLev = JSON.parse(JSON.stringify(sokoban.level));
+                            prevLev[sokoban.getPlayerPosition().y][sokoban.getPlayerPosition().x] = "@";
+                 //       }
+                  //  }
 
                     var x = e.keyCode;
 
@@ -1365,6 +1379,8 @@ angular.module('citiesApp')
                     }
 
                     sokoban.renderView();
+
+
                 },
 
                 addToMoves: function (side) {
@@ -1421,6 +1437,7 @@ angular.module('citiesApp')
                 window.removeEventListener('keydown', sokoban.keyDown, false);
             }
 
+
             this.undo = function () {
                 if ($rootScope.inQuiz) {
                     $rootScope.histQ.push("undo");
@@ -1437,10 +1454,16 @@ angular.module('citiesApp')
                 else if ($rootScope.inBQ23) {
                     $rootScope.histBQ23.push("undo");
                 }
-                sokoban.level = prevLev;
-                sokoban.renderView();
-                sokoban.updateCanvasView();
+               // if (prevLev != undefined && prevLev.length > 0) {
+               //     if (sokoban.areEq(sokoban.level, prevLev) == false) {
+                        sokoban.level = prevLev;
+                        sokoban.renderView();
+                        sokoban.updateCanvasView();
+                //    }
+               // }
             }
+
+
 
             this.run = function () {
                 sokoban.isInitialized = false;
@@ -1460,6 +1483,7 @@ angular.module('citiesApp')
                 sokoban._isLevelChanged = true;
                 sokoban.loadLevels();
                 sokoban.loadLevel(sokoban.curLevel);
+                prevLev = JSON.parse(JSON.stringify(sokoban.level));
                 sokoban.onLoad();
                 window.addEventListener('keydown', sokoban.keyDown, false);
             }
