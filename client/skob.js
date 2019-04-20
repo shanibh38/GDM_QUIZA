@@ -285,6 +285,34 @@ angular.module('citiesApp')
                                 ["G", "G", "G", "G", "G", "D", "D", "G", "D", "D", "G", "G", "G", "G"],
                                 ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
                             ],
+                            [
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "D", "D", "D", "D", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "D", "-", "-", "D", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "D", "-", "B1", "D", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "D", "-", "-", "D", "D", "D", "D", "D", "G", "G", "G"],
+                                ["G", "D", "-", "B3", "B5", "-", "-", "D", "D", "G", "G", "G"],
+                                ["G", "D", "-", "-", "D", "-", "B6", "D", "D", "G", "G", "G"],
+                                ["G", "D", "-", "-", "D", "-", "-", "D", "D", "D", "D", "G"],
+                                ["G", "D", "-", "B7", "B4", "-", "B2", "B8", "@", "-", "D", "G"],
+                                ["G", "D", "*", "*", "*", "*", "*", "*", "*", "*", "D", "G"],
+                                ["G", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                            ],
+                            [
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "D", "D", "D", "D", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "D", "-", "*", "D", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "D", "@", "*", "D", "G"],
+                                ["G", "G", "G", "G", "D", "D", "D", "D", "B4", "*", "D", "G"],
+                                ["G", "G", "G", "G", "D", "-", "B7", "-", "B2", "*", "D", "G"],
+                                ["G", "G", "G", "G", "D", "-", "-", "-", "-", "*", "D", "G"],
+                                ["G", "D", "D", "D", "D", "B8", "D", "D", "B5", "*", "D", "G"],
+                                ["G", "D", "-", "B6", "-", "B3", "-", "-", "B1", "*", "D", "G"],
+                                ["G", "D", "-", "-", "-", "-", "-", "-", "-", "*", "D", "G"],
+                                ["G", "D", "D", "D", "D", "D", "D", "D", "D", "D", "D", "G"],
+                                ["G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G", "G"],
+                            ],
                         ];
 
                     sokoban.originalSpots =
@@ -410,6 +438,29 @@ angular.module('citiesApp')
                                 ["7", "3"],
                                 ["6", "7"],
                             ],
+                            ///////
+                            [
+                                ["9", "2"],
+                                ["9", "3"],
+                                ["9", "4"],
+                                ["9", "5"],
+                                ["9", "6"],
+                                ["9", "7"],
+                                ["9", "8"],
+                                ["9", "9"],
+
+                            ], [
+                                ["2", "9"],
+                                ["3", "9"],
+                                ["4", "9"],
+                                ["5", "9"],
+                                ["6", "9"],
+                                ["7", "9"],
+                                ["8", "9"],
+                                ["9", "9"],
+
+                            ],
+                            ////////
                         ];
                 },
 
@@ -721,7 +772,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x + 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x + 2] !== "D"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x + 1]);
                                 if (sokoban.level[curPosition.y][curPosition.x + 2] === "*") {
                                     sokoban.level[curPosition.y][curPosition.x + 2] = sokoban.level[curPosition.y][curPosition.x + 1];
                                     sokoban.isPushFromSpot = true;
@@ -741,7 +792,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x + 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x + 2] === "D"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x + 1]);
                                 dontmove = true;
                                 curPosition.x--;
                             }
@@ -807,7 +858,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x - 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x - 2] !== "D"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x - 1]);
                                 if (sokoban.level[curPosition.y][curPosition.x - 2] === "*") {
                                     var boxNumber = sokoban.level[curPosition.y][curPosition.x - 1];
                                     sokoban.level[curPosition.y][curPosition.x - 2] = boxNumber;
@@ -827,7 +878,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x - 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x - 2] === "D"
                             ) {
-                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x - 1]);
                                 var hayyy = sokoban.level[curPosition.y - 1][curPosition.x].includes("$");
                                 dontmove = true;
                                 curPosition.x++;
@@ -1360,12 +1411,12 @@ angular.module('citiesApp')
                 },
 
                 keyDown: function (e) {
-                //    if (prevLev != undefined && prevLev.length > 0) {
-                //        if (sokoban.areEq(sokoban.level, prevLev) == false) {
-                            prevLev = JSON.parse(JSON.stringify(sokoban.level));
-                            prevLev[sokoban.getPlayerPosition().y][sokoban.getPlayerPosition().x] = "@";
-                 //       }
-                  //  }
+                    //    if (prevLev != undefined && prevLev.length > 0) {
+                    //        if (sokoban.areEq(sokoban.level, prevLev) == false) {
+                    prevLev = JSON.parse(JSON.stringify(sokoban.level));
+                    prevLev[sokoban.getPlayerPosition().y][sokoban.getPlayerPosition().x] = "@";
+                    //       }
+                    //  }
 
                     var x = e.keyCode;
 
@@ -1462,13 +1513,13 @@ angular.module('citiesApp')
                 else if ($rootScope.inBQ23) {
                     $rootScope.histBQ23.push("undo");
                 }
-               // if (prevLev != undefined && prevLev.length > 0) {
-               //     if (sokoban.areEq(sokoban.level, prevLev) == false) {
-                        sokoban.level = prevLev;
-                        sokoban.renderView();
-                        sokoban.updateCanvasView();
+                // if (prevLev != undefined && prevLev.length > 0) {
+                //     if (sokoban.areEq(sokoban.level, prevLev) == false) {
+                sokoban.level = prevLev;
+                sokoban.renderView();
+                sokoban.updateCanvasView();
                 //    }
-               // }
+                // }
             }
 
 
@@ -1483,11 +1534,16 @@ angular.module('citiesApp')
                     sokoban.curLevel = 14;
                 else if ($rootScope.inQuiz3)
                     sokoban.curLevel = 13;
+                    else if ($rootScope.inBQ12)
+                    sokoban.curLevel = 16;
+                else if ($rootScope.inBQ23)
+                    sokoban.curLevel = 15;
+                    /*
                 else if ($rootScope.inBQ12)
                     sokoban.curLevel = 11;
                 else if ($rootScope.inBQ23)
                     sokoban.curLevel = 6;
-
+*/
                 sokoban._isLevelChanged = true;
                 sokoban.loadLevels();
                 sokoban.loadLevel(sokoban.curLevel);
