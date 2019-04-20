@@ -122,10 +122,10 @@ function insertUsersA(userName, workerID, age, gender, education) {
       console.log("Connecting to GDMA DB\n");
     }
     let sql = `INSERT INTO UsersA (userName ,workerID ,age , gender ,education)
-    VALUES  (?,?,?,?)`;
+    VALUES  (?,?,?,?,?)`;
     con.query(sql, [userName, workerID, age, gender, education], function (err, result) {
       if (err) {
-        console.log("Error close DB from 'insertUsersA' function - " + err.message + "\n");
+        console.log("Error insertion user from 'insertUsersA' function - " + err.message + "\n");
       }
       else {
         console.log("Successed insertion user from 'insertUsersA' function\n");
