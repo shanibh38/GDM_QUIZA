@@ -45,6 +45,7 @@ angular.module('citiesApp')
     function saveDetails() {
       data = {
         "userName": $rootScope.userName,
+        "workerID" : $scope.workerID,
         "age": $scope.age,
         "gender": $scope.gender,
         "education": $scope.education

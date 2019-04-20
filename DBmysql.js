@@ -17,7 +17,7 @@ function createA() {
     else {
       console.log("Connecting to GDMA DB\n");
     }
-    con.query("CREATE TABLE IF NOT EXISTS UsersA (userName varchar(10) PRIMARY KEY, age integer, gender varchar(7),education varchar(50), bonus varchar(5))", function (err, result) {
+    con.query("CREATE TABLE IF NOT EXISTS UsersA (userName varchar(10) PRIMARY KEY, workerID varchar(50), age integer, gender varchar(7),education varchar(50), bonus varchar(5))", function (err, result) {
       if (err) {
         console.log("Error create Quiz1A - " + err.message + "\n");
       }
@@ -112,7 +112,7 @@ function getUsersA(callback) {
   //con.end();
 }
 
-function insertUsersA(userName, age, gender, education) {
+function insertUsersA(userName, workerID, age, gender, education) {
 
   con.connect(function (err) {
     if (err) {
@@ -121,9 +121,9 @@ function insertUsersA(userName, age, gender, education) {
     else {
       console.log("Connecting to GDMA DB\n");
     }
-    let sql = `INSERT INTO UsersA (userName ,age , gender ,education)
+    let sql = `INSERT INTO UsersA (userName ,workerID ,age , gender ,education)
     VALUES  (?,?,?,?)`;
-    con.query(sql, [userName, age, gender, education], function (err, result) {
+    con.query(sql, [userName, workerID, age, gender, education], function (err, result) {
       if (err) {
         console.log("Error close DB from 'insertUsersA' function - " + err.message + "\n");
       }

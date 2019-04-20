@@ -16,11 +16,12 @@ router.get('/getAllUsersA', function (req, res) {
 //register A
 router.post('/addDemogA', function (req, res) {
     var userName = req.body.userName;
+    var workerID = req.body.workerID;
     var age = req.body.age;
     var gender = req.body.gender;
     var education = req.body.education;
 
-    DBManger.insertUsersA(userName, age, gender, education);
+    DBManger.insertUsersA(userName, workerID, age, gender, education);
     res.sendStatus(200);
 });
 

@@ -4,6 +4,14 @@
     <table>
         <tr>
             <td>
+                <span class="sub_tit">Amazon Worker ID</span>
+            </td>
+            <td>
+                <input name="workerID" type="text" ng-model="workerID" required/>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <span class="sub_tit">Age</span>
             </td>
             <td>
@@ -41,5 +49,5 @@
     </table>
     <br>
 </form>
-    <button type="submit" ng-click="dmgCtrl.moveDmg()" ng-disabled="regForm.$invalid">Continue</button>
+<button type="submit" ng-click="dmgCtrl.moveDmg()" ng-disabled="regForm.$invalid">Continue</button>
 <!-- <button ng-click="dmgCtrl.moveDmg()" ng-disabled="regForm.$invalid">Continue</button> -->
