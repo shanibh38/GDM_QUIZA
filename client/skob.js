@@ -548,6 +548,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y - 1][curPosition.x].includes("$")
                                 && sokoban.level[curPosition.y - 2][curPosition.x] !== "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y - 1][curPosition.x]);
                                 if (sokoban.level[curPosition.y - 2][curPosition.x] === "*") {
                                     sokoban.level[curPosition.y - 2][curPosition.x] = sokoban.level[curPosition.y - 1][curPosition.x];
                                     sokoban.isPushFromSpot = true;
@@ -566,6 +567,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y - 1][curPosition.x].includes("$")
                                 && sokoban.level[curPosition.y - 2][curPosition.x] === "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y - 1][curPosition.x]);
                                 curPosition.y++;
                                 dontmove = true;
                             }
@@ -634,6 +636,7 @@ angular.module('citiesApp')
                             if (sokoban.level[curPosition.y + 1][curPosition.x].includes("$")
                                 && sokoban.level[curPosition.y + 2][curPosition.x] !== "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y + 1][curPosition.x]);
                                 // push from spot to next spot
                                 if (sokoban.level[curPosition.y + 2][curPosition.x] === "*") {
                                     sokoban.level[curPosition.y + 2][curPosition.x] = sokoban.level[curPosition.y + 1][curPosition.x];
@@ -654,6 +657,7 @@ angular.module('citiesApp')
                             if (sokoban.level[curPosition.y + 1][curPosition.x].includes("$")
                                 && sokoban.level[curPosition.y + 2][curPosition.x] === "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y + 1][curPosition.x]);
                                 dontmove = true;
                                 curPosition.y--;
                             }
@@ -717,6 +721,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x + 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x + 2] !== "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
                                 if (sokoban.level[curPosition.y][curPosition.x + 2] === "*") {
                                     sokoban.level[curPosition.y][curPosition.x + 2] = sokoban.level[curPosition.y][curPosition.x + 1];
                                     sokoban.isPushFromSpot = true;
@@ -736,6 +741,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x + 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x + 2] === "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x+1]);
                                 dontmove = true;
                                 curPosition.x--;
                             }
@@ -801,6 +807,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x - 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x - 2] !== "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
                                 if (sokoban.level[curPosition.y][curPosition.x - 2] === "*") {
                                     var boxNumber = sokoban.level[curPosition.y][curPosition.x - 1];
                                     sokoban.level[curPosition.y][curPosition.x - 2] = boxNumber;
@@ -820,6 +827,7 @@ angular.module('citiesApp')
                             else if (sokoban.level[curPosition.y][curPosition.x - 1].includes("$") &&
                                 sokoban.level[curPosition.y][curPosition.x - 2] === "D"
                             ) {
+                                this.checkTheFirst(sokoban.level[curPosition.y][curPosition.x-1]);
                                 var hayyy = sokoban.level[curPosition.y - 1][curPosition.x].includes("$");
                                 dontmove = true;
                                 curPosition.x++;
@@ -1470,11 +1478,11 @@ angular.module('citiesApp')
                 if ($rootScope.inLearn)
                     sokoban.curLevel = 1;
                 else if ($rootScope.inQuiz)
-                    sokoban.curLevel = 13;
+                    sokoban.curLevel = 12;
                 else if ($rootScope.inQuiz2)
                     sokoban.curLevel = 14;
                 else if ($rootScope.inQuiz3)
-                    sokoban.curLevel = 12;
+                    sokoban.curLevel = 13;
                 else if ($rootScope.inBQ12)
                     sokoban.curLevel = 11;
                 else if ($rootScope.inBQ23)
