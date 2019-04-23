@@ -26,9 +26,9 @@ function createA() {
       }
     });
     con.query(`CREATE TABLE IF NOT EXISTS Quiz1A (userName varchar(10) PRIMARY KEY,minMoves integer, firstBox varchar(10), secBox varchar(10),hardme integer,hardthem integer,
-      firstMovesRate integer, secondMovesRate integer, thirdMovesRate integer,forthMovesRate integer,fifthMovesRate integer,
-      firstBox1Rate integer, firstBox2Rate integer, firstBox3Rate integer, firstBox4Rate integer,firstBox5Rate integer,firstBox6Rate integer,
-      secondBox1Rate integer, secondBox2Rate integer, secondBox3Rate integer, secondBox4Rate integer,secondBox5Rate integer,secondBox6Rate integer,
+      firstMovesRate DOUBLE, secondMovesRate DOUBLE, thirdMovesRate DOUBLE,forthMovesRate DOUBLE,fifthMovesRate DOUBLE,
+      firstBox1Rate DOUBLE, firstBox2Rate DOUBLE, firstBox3Rate DOUBLE, firstBox4Rate DOUBLE,firstBox5Rate DOUBLE,firstBox6Rate DOUBLE,
+      secondBox1Rate DOUBLE, secondBox2Rate DOUBLE, secondBox3Rate DOUBLE, secondBox4Rate DOUBLE,secondBox5Rate DOUBLE,secondBox6Rate DOUBLE,
       resetNum integer,firstBoxToMove varchar(10),endTime varchar(10),totalMoves integer,histMoves MEDIUMTEXT)`,
       function (err, result) {
         if (err) {
@@ -39,9 +39,9 @@ function createA() {
         }
       });
     con.query(`CREATE TABLE IF NOT EXISTS Quiz2A (userName varchar(10) PRIMARY KEY,minMoves integer, firstBox varchar(10), secBox varchar(10),
-      firstMovesRate integer, secondMovesRate integer, thirdMovesRate integer,forthMovesRate integer,fifthMovesRate integer,
-      firstBox1Rate integer, firstBox2Rate integer, firstBox3Rate integer, firstBox4Rate integer,firstBox5Rate integer,firstBox6Rate integer,
-      secondBox1Rate integer, secondBox2Rate integer, secondBox3Rate integer, secondBox4Rate integer,secondBox5Rate integer,secondBox6Rate integer,
+      firstMovesRate DOUBLE, secondMovesRate DOUBLE, thirdMovesRate DOUBLE,forthMovesRate DOUBLE,fifthMovesRate DOUBLE,
+      firstBox1Rate DOUBLE, firstBox2Rate DOUBLE, firstBox3Rate DOUBLE, firstBox4Rate DOUBLE,firstBox5Rate DOUBLE,firstBox6Rate DOUBLE,
+      secondBox1Rate DOUBLE, secondBox2Rate DOUBLE, secondBox3Rate DOUBLE, secondBox4Rate DOUBLE,secondBox5Rate DOUBLE,secondBox6Rate DOUBLE,
       resetNum integer,firstBoxToMove varchar(10),endTime varchar(10),totalMoves integer,histMoves MEDIUMTEXT)`,
       function (err, result) {
         if (err) {
@@ -52,9 +52,9 @@ function createA() {
         }
       });
     con.query(`CREATE TABLE IF NOT EXISTS Quiz3A (userName varchar(10) PRIMARY KEY,minMoves integer, firstBox varchar(10), secBox varchar(10),
-      firstMovesRate integer, secondMovesRate integer, thirdMovesRate integer,forthMovesRate integer,fifthMovesRate integer,
-      firstBox1Rate integer, firstBox2Rate integer, firstBox3Rate integer, firstBox4Rate integer,firstBox5Rate integer,firstBox6Rate integer,
-      secondBox1Rate integer, secondBox2Rate integer, secondBox3Rate integer, secondBox4Rate integer,secondBox5Rate integer,secondBox6Rate integer,
+      firstMovesRate DOUBLE, secondMovesRate DOUBLE, thirdMovesRate DOUBLE,forthMovesRate DOUBLE,fifthMovesRate DOUBLE,
+      firstBox1Rate DOUBLE, firstBox2Rate DOUBLE, firstBox3Rate DOUBLE, firstBox4Rate DOUBLE,firstBox5Rate DOUBLE,firstBox6Rate DOUBLE,
+      secondBox1Rate DOUBLE, secondBox2Rate DOUBLE, secondBox3Rate DOUBLE, secondBox4Rate DOUBLE,secondBox5Rate DOUBLE,secondBox6Rate DOUBLE,
       resetNum integer,firstBoxToMove varchar(10),endTime varchar(10),totalMoves integer,histMoves MEDIUMTEXT)`,
       function (err, result) {
         if (err) {
