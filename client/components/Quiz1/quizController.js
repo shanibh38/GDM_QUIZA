@@ -90,7 +90,7 @@ angular.module('citiesApp')
         "resetNum": $rootScope.reset,
         "firstBoxToMove": $rootScope.firstBox,
         "endTime": document.getElementById("demo1").innerHTML,
-        "totalMoves": $rootScope.realMoves,
+        "totalMoves": $scope.realMoves,
         "histMoves": $rootScope.histQ.toString(),
       };
 
