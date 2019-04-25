@@ -15,6 +15,7 @@ angular.module('citiesApp')
     $rootScope.stopBQ12 = false;
     $rootScope.isExpiredBQ12 = false;
     $rootScope.histBQ12 = new Array();
+    $scope.realMoves = 0;
     var serverUrl = 'https://calm-everglades-32154.herokuapp.com/';
 
     skob.theExp();
@@ -26,6 +27,7 @@ angular.module('citiesApp')
       $rootScope.foc = true;
     }
     self.reset = function () {
+      $scope.realMoves += $rootScope.movesBQ12; 
       $rootScope.movesBQ12 = 0;
       skob.reset();
     }
@@ -56,6 +58,7 @@ angular.module('citiesApp')
     }, 1000);
 
     function saveDetails() {
+      $scope.realMoves += $rootScope.movesBQ12; 
 
       data = {
         "userName": $rootScope.userName,
@@ -65,7 +68,7 @@ angular.module('citiesApp')
         "resetNum": $rootScope.reset12,
         "firstBoxToMove": $rootScope.firstBox12,
         "endTime": document.getElementById("demo12").innerHTML,
-        "totalMoves": $rootScope.movesBQ12,
+        "totalMoves": $scope.realMoves,
         "histMoves": $rootScope.histBQ12.toString(),
       };
 
