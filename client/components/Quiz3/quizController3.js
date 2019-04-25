@@ -61,7 +61,7 @@ angular.module('citiesApp')
     }, 1000);
 
     function saveDetails() {
-      if ($scope.moves < 100 || $scope.moves > 116)
+      if ($scope.moves < 90 || $scope.moves > 110)
         $rootScope.isBonus = false;
 
       data = {
