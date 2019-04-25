@@ -17,6 +17,7 @@ angular.module('citiesApp')
     $rootScope.stopQuiz = false;
     $rootScope.isExpired = false;
     $rootScope.isBonus = true;
+    $scope.realMoves = 0;
 
     var e = skob.theExp();
 
@@ -29,7 +30,8 @@ angular.module('citiesApp')
     }
 
     self.reset = function () {
-      //$rootScope.movesQuiz = 0;
+      $scope.realMoves += $rootScope.movesQuiz; 
+      $rootScope.movesQuiz = 0;
       skob.reset();
     }
     self.undo = function () {
@@ -57,7 +59,7 @@ angular.module('citiesApp')
     }, 1000);
 
     function saveDetails() {
-
+      $scope.realMoves += $rootScope.movesQuiz;
       if ($scope.moves < 90 || $scope.moves > 110)
         $rootScope.isBonus = false;
 
@@ -88,7 +90,7 @@ angular.module('citiesApp')
         "resetNum": $rootScope.reset,
         "firstBoxToMove": $rootScope.firstBox,
         "endTime": document.getElementById("demo1").innerHTML,
-        "totalMoves": $rootScope.movesQuiz,
+        "totalMoves": $rootScope.realMoves,
         "histMoves": $rootScope.histQ.toString(),
       };
 
