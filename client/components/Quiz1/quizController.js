@@ -29,7 +29,7 @@ angular.module('citiesApp')
     }
 
     self.reset = function () {
-      $rootScope.movesQuiz = 0;
+      //$rootScope.movesQuiz = 0;
       skob.reset();
     }
     self.undo = function () {

@@ -46,7 +46,7 @@ angular.module('citiesApp')
       return (n < 10 ? "0" : "") + n;
     }
     self.reset = function () {
-      $rootScope.movesQuiz2 = 0;
+     // $rootScope.movesQuiz2 = 0;
       skob.reset();
     }
     self.undo = function () {
